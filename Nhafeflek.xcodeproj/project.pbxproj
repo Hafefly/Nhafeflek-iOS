@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99015AC12AD825E9005ADD6B /* HFLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC02AD825E9005ADD6B /* HFLogo.swift */; };
+		99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC32AD8283E005ADD6B /* AuthProvider.swift */; };
+		99015ACB2AD82A0A005ADD6B /* HFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ACA2AD82A0A005ADD6B /* HFButton.swift */; };
+		99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ACC2AD82B6A005ADD6B /* Color.swift */; };
+		99015AD12AD82CD4005ADD6B /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD02AD82CD4005ADD6B /* LinearGradient.swift */; };
+		99015AD32AD82D7C005ADD6B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD22AD82D7C005ADD6B /* View.swift */; };
+		99015AD52AD82DF8005ADD6B /* HFAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD42AD82DF8005ADD6B /* HFAuthTextField.swift */; };
+		99015AD82AD83004005ADD6B /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD72AD83004005ADD6B /* Separator.swift */; };
+		99015ADA2AD83075005ADD6B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD92AD83075005ADD6B /* Font.swift */; };
+		99015ADC2AD830C1005ADD6B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ADB2AD830C1005ADD6B /* Text.swift */; };
+		99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ADD2AD83493005ADD6B /* LoginView.swift */; };
+		99015AE22AD84036005ADD6B /* HaircutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE12AD84036005ADD6B /* HaircutCard.swift */; };
+		99015AE42AD86939005ADD6B /* UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE32AD86939005ADD6B /* UInt.swift */; };
+		99015AE72AD86F6A005ADD6B /* HFProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE62AD86F6A005ADD6B /* HFProfileCard.swift */; };
+		99015AE92AD8781B005ADD6B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE82AD8781B005ADD6B /* ProfileView.swift */; };
+		99015AEC2AD87B51005ADD6B /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AEB2AD87B51005ADD6B /* ViewLayout.swift */; };
 		99A03B352AD5D39900814D02 /* NhafeflekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A03B342AD5D39900814D02 /* NhafeflekApp.swift */; };
 		99A03B372AD5D39900814D02 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A03B362AD5D39900814D02 /* ContentView.swift */; };
 		99A03B392AD5D39B00814D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A03B382AD5D39B00814D02 /* Assets.xcassets */; };
@@ -15,6 +31,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		99015AC02AD825E9005ADD6B /* HFLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFLogo.swift; sourceTree = "<group>"; };
+		99015AC32AD8283E005ADD6B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		99015ACA2AD82A0A005ADD6B /* HFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFButton.swift; sourceTree = "<group>"; };
+		99015ACC2AD82B6A005ADD6B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		99015AD02AD82CD4005ADD6B /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
+		99015AD22AD82D7C005ADD6B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		99015AD42AD82DF8005ADD6B /* HFAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAuthTextField.swift; sourceTree = "<group>"; };
+		99015AD72AD83004005ADD6B /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		99015AD92AD83075005ADD6B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		99015ADB2AD830C1005ADD6B /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		99015ADD2AD83493005ADD6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		99015AE12AD84036005ADD6B /* HaircutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaircutCard.swift; sourceTree = "<group>"; };
+		99015AE32AD86939005ADD6B /* UInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt.swift; sourceTree = "<group>"; };
+		99015AE62AD86F6A005ADD6B /* HFProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFProfileCard.swift; sourceTree = "<group>"; };
+		99015AE82AD8781B005ADD6B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		99015AEB2AD87B51005ADD6B /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 		99A03B312AD5D39900814D02 /* Nhafeflek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nhafeflek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A03B342AD5D39900814D02 /* NhafeflekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhafeflekApp.swift; sourceTree = "<group>"; };
 		99A03B362AD5D39900814D02 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +66,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99015AC22AD825ED005ADD6B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				99015AC02AD825E9005ADD6B /* HFLogo.swift */,
+				99015AD72AD83004005ADD6B /* Separator.swift */,
+				99015AE12AD84036005ADD6B /* HaircutCard.swift */,
+				99015AE62AD86F6A005ADD6B /* HFProfileCard.swift */,
+				99015AEB2AD87B51005ADD6B /* ViewLayout.swift */,
+				99015AD62AD82E09005ADD6B /* ViewModifiers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		99015AC52AD82842005ADD6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				99015AC72AD82857005ADD6B /* remotes */,
+				99015AC62AD8284C005ADD6B /* locals */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99015AC62AD8284C005ADD6B /* locals */ = {
+			isa = PBXGroup;
+			children = (
+				99015AC32AD8283E005ADD6B /* AuthProvider.swift */,
+			);
+			path = locals;
+			sourceTree = "<group>";
+		};
+		99015AC72AD82857005ADD6B /* remotes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = remotes;
+			sourceTree = "<group>";
+		};
+		99015ACE2AD82B6E005ADD6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				99015ACF2AD82B79005ADD6B /* SwiftUI */,
+				99015AE52AD8693C005ADD6B /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		99015ACF2AD82B79005ADD6B /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				99015ACC2AD82B6A005ADD6B /* Color.swift */,
+				99015AD02AD82CD4005ADD6B /* LinearGradient.swift */,
+				99015AD22AD82D7C005ADD6B /* View.swift */,
+				99015AD92AD83075005ADD6B /* Font.swift */,
+				99015ADB2AD830C1005ADD6B /* Text.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		99015AD62AD82E09005ADD6B /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				99015ACA2AD82A0A005ADD6B /* HFButton.swift */,
+				99015AD42AD82DF8005ADD6B /* HFAuthTextField.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		99015ADF2AD83496005ADD6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				99015AE02AD834A8005ADD6B /* Login */,
+				99015AEA2AD8781F005ADD6B /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		99015AE02AD834A8005ADD6B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				99015ADD2AD83493005ADD6B /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		99015AE52AD8693C005ADD6B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				99015AE32AD86939005ADD6B /* UInt.swift */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		99015AEA2AD8781F005ADD6B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				99015AE82AD8781B005ADD6B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		99A03B282AD5D39900814D02 = {
 			isa = PBXGroup;
 			children = (
@@ -53,10 +185,14 @@
 		99A03B332AD5D39900814D02 /* Nhafeflek */ = {
 			isa = PBXGroup;
 			children = (
+				99015ACE2AD82B6E005ADD6B /* Extensions */,
 				99A03B342AD5D39900814D02 /* NhafeflekApp.swift */,
 				99A03B362AD5D39900814D02 /* ContentView.swift */,
+				99015ADF2AD83496005ADD6B /* Views */,
 				99A03B382AD5D39B00814D02 /* Assets.xcassets */,
 				99A03B3A2AD5D39B00814D02 /* Preview Content */,
+				99015AC22AD825ED005ADD6B /* Components */,
+				99015AC52AD82842005ADD6B /* Models */,
 			);
 			path = Nhafeflek;
 			sourceTree = "<group>";
@@ -145,8 +281,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99015AEC2AD87B51005ADD6B /* ViewLayout.swift in Sources */,
+				99015AD32AD82D7C005ADD6B /* View.swift in Sources */,
+				99015ADA2AD83075005ADD6B /* Font.swift in Sources */,
+				99015ACB2AD82A0A005ADD6B /* HFButton.swift in Sources */,
+				99015AE42AD86939005ADD6B /* UInt.swift in Sources */,
 				99A03B372AD5D39900814D02 /* ContentView.swift in Sources */,
 				99A03B352AD5D39900814D02 /* NhafeflekApp.swift in Sources */,
+				99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */,
+				99015AE72AD86F6A005ADD6B /* HFProfileCard.swift in Sources */,
+				99015AE22AD84036005ADD6B /* HaircutCard.swift in Sources */,
+				99015AE92AD8781B005ADD6B /* ProfileView.swift in Sources */,
+				99015AC12AD825E9005ADD6B /* HFLogo.swift in Sources */,
+				99015AD12AD82CD4005ADD6B /* LinearGradient.swift in Sources */,
+				99015AD82AD83004005ADD6B /* Separator.swift in Sources */,
+				99015AD52AD82DF8005ADD6B /* HFAuthTextField.swift in Sources */,
+				99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */,
+				99015ADC2AD830C1005ADD6B /* Text.swift in Sources */,
+				99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +440,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,6 +470,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
