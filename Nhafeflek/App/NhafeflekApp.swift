@@ -18,7 +18,9 @@ struct NhafeflekApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainView()
+            ZStack{
+                StackTrigger(coordinator)
+            }
         }
     }
 }

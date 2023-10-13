@@ -52,7 +52,7 @@ struct HeaderView: View {
         .background(
             Color.hfOrange
                 .ignoresSafeArea()
-                .pattern()
+                .titlePattern()
         )
     }
     

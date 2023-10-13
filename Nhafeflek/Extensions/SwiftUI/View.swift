@@ -12,16 +12,16 @@ extension View {
         clipShape(RoundedCorner(radius: radius, corners: corners) )
     }
     
-    func backgroundPattern(scale: Double) -> some View {
+    func ImagePattern() -> some View {
         self.overlay(
             Image("pattern")
                 .resizable()
-                .scaleEffect(scale)
+                .scaledToFill()
                 .opacity(0.06)
         )
     }
     
-    func pattern() -> some View {
+    func titlePattern() -> some View {
         self.overlay(
             Image("pattern")
                 .opacity(0.1)

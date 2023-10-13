@@ -16,16 +16,19 @@ struct SplashView: View {
                 .scaledToFit()
                 .padding(.horizontal, 32)
             Spacer()
-            Text("Raynmore™")
+            Spacer()
+            Text("RAYNMORE™")
+                .font(.white, .semiBold, 20)
+            Spacer()
         }
         .padding(16)
         .background(
             ZStack{
                 Image("BackgroundImage")
-                    .blur(radius: 10)
+                    .blur(radius: 6)
                 LinearGradient.hfGradient
             }
-            .backgroundPattern(scale: 2.1)
+            .ImagePattern()
         )
     }
 }

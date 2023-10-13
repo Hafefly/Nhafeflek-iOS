@@ -52,7 +52,7 @@ struct LoginView: View {
                     .blur(radius: 10)
                 LinearGradient.hfGradient
             }
-            .backgroundPattern(scale: 2.1)
+                .ImagePattern()
         )
     }
 }

@@ -21,6 +21,6 @@ enum Tabs: String, Hashable, CaseIterable {
     }
     
     var icon: String {
-        return "ic_\(rawValue.lowercased())"
+        return "ic_\(rawValue.lowercased())_white"
     }
 }
