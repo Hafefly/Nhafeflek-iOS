@@ -26,7 +26,7 @@ struct ViewLayout<Header: View, Content: View>: View {
                         leading: proxy.safeAreaInsets.leading,
                         bottom: proxy.safeAreaInsets.bottom,
                         trailing: proxy.safeAreaInsets.trailing))
-                .padding(16)
+                .padding(.horizontal, 16)
                 .background(Color.primaryColor)
             }
         }
@@ -39,18 +39,15 @@ struct HeaderView: View {
     let title: String
     
     var body: some View {
-        VStack {
-            HStack{
-                Spacer()
-                Text(title)
-                    .title()
-                    .padding(.leading, 10)
-                    .lineLimit(2)
-                    .padding(EdgeInsets())
-                Spacer()
-            }
+        HStack{
+            Spacer()
+            Text(title)
+                .title()
+                .padding(.leading, 10)
+                .lineLimit(2)
+                .padding(EdgeInsets())
+            Spacer()
         }
-        .padding(.horizontal, 16)
         .frame(height: HeaderView.headerHeight)
         .background(
             Color.hfOrange

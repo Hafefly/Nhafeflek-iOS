@@ -13,8 +13,8 @@ struct AppointmentsView: View {
             ForEach(Order.mockOrders, id: \.id?.hashValue) { order in
                 HaircutCard(order: order)
             }
+            .padding(.vertical, 16)
         }
-        .padding(16)
     }
 }
 
