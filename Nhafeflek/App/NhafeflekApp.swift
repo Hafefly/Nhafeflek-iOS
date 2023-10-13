@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import HFNavigation
+import FirebaseCore
 
 @main
 struct NhafeflekApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    private let coordinator = NavigationCoordinator.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
