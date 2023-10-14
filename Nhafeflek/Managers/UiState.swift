@@ -16,6 +16,8 @@ enum UiState<Model> {
     public var data: Model? {
         if case let .success(a) = self {
             return a
+        } else {
+            return nil
         }
     }
 }

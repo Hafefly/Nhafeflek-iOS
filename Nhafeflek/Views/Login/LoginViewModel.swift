@@ -27,6 +27,16 @@ extension LoginView {
             }
         }
         
+        func resetPassword(email: String) {
+            Task {
+                do {
+                    try await FirebaseAuth.shared.resetPassword(email: email)
+                } catch {
+                    self.emailUiState = .failed(error.localizedDescription)
+                }
+            }
+        }
+        
         func signup() {
 //            NavigationCoordinator.pushScreen(SignUpInfoView())
         }
