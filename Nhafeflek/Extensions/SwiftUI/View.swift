@@ -24,6 +24,8 @@ extension View {
     func titlePattern() -> some View {
         self.overlay(
             Image("pattern")
+                .resizable()
+                .scaledToFill()
                 .opacity(0.1)
         )
     }

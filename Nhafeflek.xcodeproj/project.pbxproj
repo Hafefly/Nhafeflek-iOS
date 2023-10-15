@@ -307,12 +307,12 @@
 				99015ACE2AD82B6E005ADD6B /* Extensions */,
 				99ED943F2AD92D520022F1F7 /* App */,
 				99015ADF2AD83496005ADD6B /* Views */,
-				99A03B382AD5D39B00814D02 /* Assets.xcassets */,
-				99A03B3A2AD5D39B00814D02 /* Preview Content */,
 				99015AC22AD825ED005ADD6B /* Components */,
 				99015AC52AD82842005ADD6B /* Models */,
 				99B4289D2AD9796E00C54654 /* Services */,
 				99DA307E2AD9DF8C00E68474 /* Managers */,
+				99A03B3A2AD5D39B00814D02 /* Preview Content */,
+				99A03B382AD5D39B00814D02 /* Assets.xcassets */,
 			);
 			path = Nhafeflek;
 			sourceTree = "<group>";

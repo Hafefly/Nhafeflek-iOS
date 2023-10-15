@@ -11,14 +11,6 @@ struct MainView: View {
     
     @State var tab: Tabs = .home
     
-    let shadowImage = UIImage.gradientImageWithBounds(
-        bounds: CGRect( x: 0, y: 0, width: UIScreen.main.scale, height: 10),
-        colors: [
-            UIColor.clear.cgColor,
-            UIColor.black.withAlphaComponent(0.2).cgColor
-        ]
-    )
-    
     var body: some View {
         TabView(selection: $tab) {
             ForEach(Tabs.allCases, id: \.self){ tab in
@@ -31,6 +23,7 @@ struct MainView: View {
                     VStack{
                         Image(tab.icon)
                             .renderingMode(.template)
+                            .foregroundColor(.white)
                         Text(tab.rawValue)
                             .font(.white, .semiBold, 22)
                     }
@@ -39,10 +32,8 @@ struct MainView: View {
         }
         .onAppear {
             let appearance = UITabBarAppearance()
-            appearance.shadowImage = shadowImage
             appearance.backgroundColor = UIColor(Color.hfOrange)
             UITabBar.appearance().backgroundColor = UIColor(Color.hfOrange)
-            UITabBar.appearance().backgroundImage = UIImage(named: "pattern")
             UITabBar.appearance().standardAppearance = appearance
         }
         .accentColor(.white)
