@@ -115,7 +115,7 @@ struct HaircutCard: View {
                 }
             }
         }
-        .padding(16)
+        .padding(12)
         .background(Color.white)
         .cornerRadius(16)
         .onTapGesture {
@@ -142,67 +142,10 @@ struct HaircutCard: View {
 
 struct HaircutCard_Previews: PreviewProvider {
     static var previews: some View {
-        let order = Order(userId: "", barberId: "", fade: 150, beard: 100, hairdryer: nil, razor: nil, scissors: 50, straightener: nil, atHome: 150, totalPrice: 450, confirmedInterval: OrderInterval(from: "", to: ""))
+        let order = Order(userId: "", barberId: "", fade: 150, beard: 100, hairdryer: nil, razor: nil, scissors: 50, straightener: nil, atHome: 150, totalPrice: 450)
         VStack{
             HaircutCard(order: order)
             Spacer()
         }
-    }
-}
-
-enum Haircut: CaseIterable {
-    case fade
-    case beard
-    case hairdryer
-    case razor
-    case scissors
-    case straightener
-    case atHome
-}
-
-protocol CodeIdentifiable: Codable, Identifiable {
-    var id: String? { get }
-}
-
-struct OrderReference: CodeIdentifiable {
-    var id: String?
-    var userId: String
-    var barberId: String
-    var createdAt: String
-    var deletedAt: String
-}
-
-struct Order: CodeIdentifiable {
-    var id: String?
-    var userId: String
-    var barberId: String
-    let fade: UInt?
-    let beard: UInt?
-    let hairdryer: UInt?
-    let razor: UInt?
-    let scissors: UInt?
-    let straightener: UInt?
-    let atHome: UInt?
-    
-    var totalPrice: UInt
-    
-    var intervals: [OrderInterval]?
-    var confirmedInterval: OrderInterval?
-    
-    static let mockOrders = [
-        Order(id: "1", userId: "", barberId: "", fade: 150, beard: 100, hairdryer: nil, razor: nil, scissors: 50, straightener: nil, atHome: 150, totalPrice: 450, confirmedInterval: OrderInterval(from: "", to: "")),
-        Order(id: "2", userId: "", barberId: "", fade: 150, beard: 100, hairdryer: nil, razor: nil, scissors: 50, straightener: nil, atHome: 150, totalPrice: 450, confirmedInterval: OrderInterval(from: "", to: "")),
-        Order(id: "3", userId: "", barberId: "", fade: 150, beard: 100, hairdryer: nil, razor: nil, scissors: 50, straightener: nil, atHome: 150, totalPrice: 450, confirmedInterval: OrderInterval(from: "", to: "")),
-        Order(id: "4", userId: "", barberId: "", fade: 150, beard: 100, hairdryer: nil, razor: nil, scissors: 50, straightener: nil, atHome: 150, totalPrice: 450, confirmedInterval: OrderInterval(from: "", to: ""))
-    ]
-}
-
-struct OrderInterval: Codable {
-    var from: String
-    var to: String
-    
-    var timeString: String {
-        return ""
-//        "\(from.dateValue().getFormattedHour()) - \(to.dateValue().getFormattedDate())"
     }
 }

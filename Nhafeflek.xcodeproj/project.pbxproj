@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		990021712ADC59D400A8C309 /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 990021702ADC58EE00A8C309 /* impact.ttf */; };
+		990021742ADC62FC00A8C309 /* Haircut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021732ADC62FC00A8C309 /* Haircut.swift */; };
+		990021762ADC631200A8C309 /* CodeIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021752ADC631200A8C309 /* CodeIdentifiable.swift */; };
+		990021782ADC633400A8C309 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021772ADC633400A8C309 /* Order.swift */; };
+		9900217A2ADC662900A8C309 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021792ADC662900A8C309 /* Date.swift */; };
 		99015AC12AD825E9005ADD6B /* HFLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC02AD825E9005ADD6B /* HFLogo.swift */; };
 		99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC32AD8283E005ADD6B /* AuthProvider.swift */; };
 		99015ACB2AD82A0A005ADD6B /* HFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ACA2AD82A0A005ADD6B /* HFButton.swift */; };
@@ -55,6 +59,10 @@
 /* Begin PBXFileReference section */
 		990021702ADC58EE00A8C309 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
 		990021722ADC5A1A00A8C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		990021732ADC62FC00A8C309 /* Haircut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haircut.swift; sourceTree = "<group>"; };
+		990021752ADC631200A8C309 /* CodeIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeIdentifiable.swift; sourceTree = "<group>"; };
+		990021772ADC633400A8C309 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		990021792ADC662900A8C309 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		99015AC02AD825E9005ADD6B /* HFLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFLogo.swift; sourceTree = "<group>"; };
 		99015AC32AD8283E005ADD6B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		99015ACA2AD82A0A005ADD6B /* HFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFButton.swift; sourceTree = "<group>"; };
@@ -170,6 +178,9 @@
 			children = (
 				99B4289F2AD979B200C54654 /* HFBarber.swift */,
 				99B428A12AD979D800C54654 /* WorkingHours.swift */,
+				990021732ADC62FC00A8C309 /* Haircut.swift */,
+				990021752ADC631200A8C309 /* CodeIdentifiable.swift */,
+				990021772ADC633400A8C309 /* Order.swift */,
 			);
 			path = remotes;
 			sourceTree = "<group>";
@@ -233,6 +244,7 @@
 			children = (
 				99015AE32AD86939005ADD6B /* UInt.swift */,
 				99B428A32AD979F900C54654 /* String.swift */,
+				990021792ADC662900A8C309 /* Date.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -474,7 +486,9 @@
 				99ED94282AD923030022F1F7 /* AppointmentsView.swift in Sources */,
 				99015AD32AD82D7C005ADD6B /* View.swift in Sources */,
 				99ED942B2AD928580022F1F7 /* Tabs.swift in Sources */,
+				990021742ADC62FC00A8C309 /* Haircut.swift in Sources */,
 				99B428A22AD979D800C54654 /* WorkingHours.swift in Sources */,
+				990021762ADC631200A8C309 /* CodeIdentifiable.swift in Sources */,
 				99DA30802AD9DF9E00E68474 /* UiState.swift in Sources */,
 				99B4289C2AD9796800C54654 /* FirebaseAuth.swift in Sources */,
 				99015ADA2AD83075005ADD6B /* Font.swift in Sources */,
@@ -492,6 +506,8 @@
 				99015AD12AD82CD4005ADD6B /* LinearGradient.swift in Sources */,
 				99ED94412AD944620022F1F7 /* SplashView.swift in Sources */,
 				99015AD82AD83004005ADD6B /* Separator.swift in Sources */,
+				990021782ADC633400A8C309 /* Order.swift in Sources */,
+				9900217A2ADC662900A8C309 /* Date.swift in Sources */,
 				99015AD52AD82DF8005ADD6B /* HFAuthTextField.swift in Sources */,
 				99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */,
 				99015ADC2AD830C1005ADD6B /* Text.swift in Sources */,
