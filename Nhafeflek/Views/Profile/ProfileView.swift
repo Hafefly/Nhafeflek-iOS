@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     
-    @State private var isEditing = true
+    @State private var isEditing = false
     
     @State private var firstnameValue = "Samy Abderraouf"
     @State private var lastnameValue = "Mehdid"
@@ -24,13 +24,13 @@ struct ProfileView: View {
             
             hfProfileCard()
             
+            Separator("haircuts history")
+            
             if !isEditing {
-                Separator("haircuts history")
-                
                 ScrollView(showsIndicators: false){
                     ForEach(Order.mockOrders, id: \.id?.hashValue) { order in
                         HaircutCard(order: order)
-                    }
+                    }.padding(.bottom)
                 }
             }
         }
