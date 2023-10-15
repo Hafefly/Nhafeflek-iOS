@@ -9,13 +9,13 @@ import SwiftUI
 
 extension Font {
     enum SFProRounded: String {
-        case medium = "Rubik-Medium"
-        case regular = "Rubik-Regular"
-        case semiBold = "Rubik-SemiBold"
-        case bold = "Rubik-Bold"
+        case medium = "SF-Pro-Display-Medium"
+        case regular = "SF-Pro-Display-Regular"
+        case semiBold = "SF-Pro-Display-SemiBold"
+        case bold = "SF-Pro-Display-Bold"
     }
     
     enum HFImpact: String {
-        case regular = "RumRaisin-Regular"
+        case regular = "impact"
     }
 }

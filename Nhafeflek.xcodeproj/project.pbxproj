@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990021712ADC59D400A8C309 /* impact.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 990021702ADC58EE00A8C309 /* impact.ttf */; };
 		99015AC12AD825E9005ADD6B /* HFLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC02AD825E9005ADD6B /* HFLogo.swift */; };
 		99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC32AD8283E005ADD6B /* AuthProvider.swift */; };
 		99015ACB2AD82A0A005ADD6B /* HFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ACA2AD82A0A005ADD6B /* HFButton.swift */; };
@@ -52,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		990021702ADC58EE00A8C309 /* impact.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = impact.ttf; sourceTree = "<group>"; };
+		990021722ADC5A1A00A8C309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		99015AC02AD825E9005ADD6B /* HFLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFLogo.swift; sourceTree = "<group>"; };
 		99015AC32AD8283E005ADD6B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		99015ACA2AD82A0A005ADD6B /* HFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFButton.swift; sourceTree = "<group>"; };
@@ -108,6 +111,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9900216D2ADC587300A8C309 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				9900216E2ADC58B400A8C309 /* Fonts */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		9900216E2ADC58B400A8C309 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9900216F2ADC58BE00A8C309 /* Impact */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9900216F2ADC58BE00A8C309 /* Impact */ = {
+			isa = PBXGroup;
+			children = (
+				990021702ADC58EE00A8C309 /* impact.ttf */,
+			);
+			path = Impact;
+			sourceTree = "<group>";
+		};
 		99015AC22AD825ED005ADD6B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +289,9 @@
 		99A03B332AD5D39900814D02 /* Nhafeflek */ = {
 			isa = PBXGroup;
 			children = (
+				990021722ADC5A1A00A8C309 /* Info.plist */,
 				99ED94432AD945920022F1F7 /* GoogleService-Info.plist */,
+				9900216D2ADC587300A8C309 /* Ressources */,
 				99015ACE2AD82B6E005ADD6B /* Extensions */,
 				99ED943F2AD92D520022F1F7 /* App */,
 				99015ADF2AD83496005ADD6B /* Views */,
@@ -421,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990021712ADC59D400A8C309 /* impact.ttf in Resources */,
 				99A03B3C2AD5D39B00814D02 /* Preview Assets.xcassets in Resources */,
 				99A03B392AD5D39B00814D02 /* Assets.xcassets in Resources */,
 				99ED94442AD945930022F1F7 /* GoogleService-Info.plist in Resources */,
@@ -603,6 +633,7 @@
 				DEVELOPMENT_TEAM = QH3T53K3KZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nhafeflek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -634,6 +665,7 @@
 				DEVELOPMENT_TEAM = QH3T53K3KZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nhafeflek/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
