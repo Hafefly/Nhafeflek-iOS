@@ -20,7 +20,6 @@
 		99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ADD2AD83493005ADD6B /* LoginView.swift */; };
 		99015AE22AD84036005ADD6B /* HaircutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE12AD84036005ADD6B /* HaircutCard.swift */; };
 		99015AE42AD86939005ADD6B /* UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE32AD86939005ADD6B /* UInt.swift */; };
-		99015AE72AD86F6A005ADD6B /* HFProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE62AD86F6A005ADD6B /* HFProfileCard.swift */; };
 		99015AE92AD8781B005ADD6B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE82AD8781B005ADD6B /* ProfileView.swift */; };
 		99015AEC2AD87B51005ADD6B /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AEB2AD87B51005ADD6B /* ViewLayout.swift */; };
 		995D1DD72AD9A32100C75583 /* AdmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D1DD62AD9A32100C75583 /* AdmissionView.swift */; };
@@ -66,7 +65,6 @@
 		99015ADD2AD83493005ADD6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		99015AE12AD84036005ADD6B /* HaircutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaircutCard.swift; sourceTree = "<group>"; };
 		99015AE32AD86939005ADD6B /* UInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt.swift; sourceTree = "<group>"; };
-		99015AE62AD86F6A005ADD6B /* HFProfileCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFProfileCard.swift; sourceTree = "<group>"; };
 		99015AE82AD8781B005ADD6B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		99015AEB2AD87B51005ADD6B /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 		995D1DD62AD9A32100C75583 /* AdmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmissionView.swift; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				99015AC02AD825E9005ADD6B /* HFLogo.swift */,
 				99015AD72AD83004005ADD6B /* Separator.swift */,
 				99015AE12AD84036005ADD6B /* HaircutCard.swift */,
-				99015AE62AD86F6A005ADD6B /* HFProfileCard.swift */,
 				99015AEB2AD87B51005ADD6B /* ViewLayout.swift */,
 				99015AD62AD82E09005ADD6B /* ViewModifiers */,
 			);
@@ -458,7 +455,6 @@
 				99ED942D2AD928C50022F1F7 /* CalendarView.swift in Sources */,
 				99A03B352AD5D39900814D02 /* NhafeflekApp.swift in Sources */,
 				99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */,
-				99015AE72AD86F6A005ADD6B /* HFProfileCard.swift in Sources */,
 				99DA307B2AD9DF0600E68474 /* LoginViewModel.swift in Sources */,
 				99015AE22AD84036005ADD6B /* HaircutCard.swift in Sources */,
 				99015AE92AD8781B005ADD6B /* ProfileView.swift in Sources */,

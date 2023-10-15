@@ -13,23 +13,19 @@ struct ActivationView: View {
             HeaderView(title: "activate account")
         } content: { edges in
             VStack{
-                Text("please head to our headquartered  to activate your account")
+                Text("please head to our headquartered to activate your account")
                     .font(.primaryColor, .semiBold, 12)
                     .frame(width: .infinity)
                     .background(Color.white)
                 VStack(alignment: .leading){
                     Text("account informations")
                         .font(.primaryColor, .semiBold, 20)
-                    VStack{
-                        Text("fullname")
-                            .font(.primaryColor, .medium, 16)
-                        Text("Samy Abderraouf Mehdid")
-                            .font(.white, .semiBold, 16)
-                            .padding(16)
-                            .frame(width: .infinity)
-                            .cornerRadius(6)
-                    }
+                    informationPanel(label: "fullname", value: "Samy Abde")
+                    informationPanel(label: "barbershop name", value: "Fasta La")
                 }
+                .padding(16)
+                .background(Color.white)
+                .cornerRadius(8)
                 Spacer()
             }
             .padding(16)
@@ -41,6 +37,20 @@ struct ActivationView: View {
                 }
                 .ImagePattern()
             )
+        }
+    }
+    
+    @ViewBuilder
+    private func informationPanel(label: String, value: String) -> some View {
+        VStack{
+            Text(label)
+                .font(.primaryColor, .medium, 16)
+            Text(value)
+                .font(.white, .semiBold, 16)
+                .padding(16)
+                .frame(width: .infinity)
+                .background(Color.primaryColor)
+                .cornerRadius(6)
         }
     }
 }
