@@ -12,6 +12,8 @@
 		990021762ADC631200A8C309 /* CodeIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021752ADC631200A8C309 /* CodeIdentifiable.swift */; };
 		990021782ADC633400A8C309 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021772ADC633400A8C309 /* Order.swift */; };
 		9900217A2ADC662900A8C309 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990021792ADC662900A8C309 /* Date.swift */; };
+		9900217D2ADD097C00A8C309 /* BarberRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900217C2ADD097B00A8C309 /* BarberRepo.swift */; };
+		9900217F2ADD0AEF00A8C309 /* OrderRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900217E2ADD0AEE00A8C309 /* OrderRepo.swift */; };
 		99015AC12AD825E9005ADD6B /* HFLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC02AD825E9005ADD6B /* HFLogo.swift */; };
 		99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AC32AD8283E005ADD6B /* AuthProvider.swift */; };
 		99015ACB2AD82A0A005ADD6B /* HFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ACA2AD82A0A005ADD6B /* HFButton.swift */; };
@@ -63,6 +65,8 @@
 		990021752ADC631200A8C309 /* CodeIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeIdentifiable.swift; sourceTree = "<group>"; };
 		990021772ADC633400A8C309 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		990021792ADC662900A8C309 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9900217C2ADD097B00A8C309 /* BarberRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberRepo.swift; sourceTree = "<group>"; };
+		9900217E2ADD0AEE00A8C309 /* OrderRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepo.swift; sourceTree = "<group>"; };
 		99015AC02AD825E9005ADD6B /* HFLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFLogo.swift; sourceTree = "<group>"; };
 		99015AC32AD8283E005ADD6B /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		99015ACA2AD82A0A005ADD6B /* HFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFButton.swift; sourceTree = "<group>"; };
@@ -141,6 +145,15 @@
 				990021702ADC58EE00A8C309 /* impact.ttf */,
 			);
 			path = Impact;
+			sourceTree = "<group>";
+		};
+		9900217B2ADC78EA00A8C309 /* Repos */ = {
+			isa = PBXGroup;
+			children = (
+				9900217C2ADD097B00A8C309 /* BarberRepo.swift */,
+				9900217E2ADD0AEE00A8C309 /* OrderRepo.swift */,
+			);
+			path = Repos;
 			sourceTree = "<group>";
 		};
 		99015AC22AD825ED005ADD6B /* Components */ = {
@@ -328,6 +341,7 @@
 		99B4289D2AD9796E00C54654 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9900217B2ADC78EA00A8C309 /* Repos */,
 				99B4289E2AD9797600C54654 /* Firebase */,
 			);
 			path = Services;
@@ -486,6 +500,7 @@
 				99ED94282AD923030022F1F7 /* AppointmentsView.swift in Sources */,
 				99015AD32AD82D7C005ADD6B /* View.swift in Sources */,
 				99ED942B2AD928580022F1F7 /* Tabs.swift in Sources */,
+				9900217F2ADD0AEF00A8C309 /* OrderRepo.swift in Sources */,
 				990021742ADC62FC00A8C309 /* Haircut.swift in Sources */,
 				99B428A22AD979D800C54654 /* WorkingHours.swift in Sources */,
 				990021762ADC631200A8C309 /* CodeIdentifiable.swift in Sources */,
@@ -512,6 +527,7 @@
 				99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */,
 				99015ADC2AD830C1005ADD6B /* Text.swift in Sources */,
 				99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */,
+				9900217D2ADD097C00A8C309 /* BarberRepo.swift in Sources */,
 				99ED943E2AD92D4E0022F1F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
