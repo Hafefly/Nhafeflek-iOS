@@ -14,18 +14,21 @@ class OrderRepo {
     
     private let ordersCollection = Firestore.firestore().collection(HFCollection.orders.rawValue)
     
-    func createOrderReference(order: Order) throws {
-        let referenceId = try createOrder(order: order)
-        
-        let ref = OrderReference(userId: order.userId, barberId: order.barberId, createdAt: Timestamp())
-        
-        try BarberRepo.shared.createOrderReference(ref: ref, referenceId: referenceId)
-        try BarberRepo.shared.createOrderReference(ref: ref, referenceId: referenceId)
+    func getOrder(_ id: String) async throws -> Order {
+        return try await ordersCollection.document(id).getDocument(as: Order.self)
     }
     
-    private func createOrder(order: Order) throws -> String {
-        let reference = ordersCollection.document()
-        try reference.setData(from: order)
+    private func updateOrder(order: Order, timeIntervals: [OrderInterval]) throws -> String {
+        guard let id = order.id else {
+            throw URLError(.badURL)
+        }
+        
+        var modifierOrder = order
+        
+        modifierOrder.intervals = timeIntervals
+        
+        let reference = ordersCollection.document(id)
+        try reference.setData(from: modifierOrder)
         return reference.documentID
     }
     
@@ -34,9 +37,7 @@ class OrderRepo {
             return []
         }
         
-        var orders = try self.decodeDocuments(try await ordersCollection.whereField(FieldPath.documentID(), in: ids).getDocuments(), as: Order.self)
-        
-        return orders
+        return try self.decodeDocuments(try await ordersCollection.whereField(FieldPath.documentID(), in: ids).getDocuments(), as: Order.self)
     }
     
     func decodeDocuments<T: Decodable>(_ snapshots: QuerySnapshot, as type: T.Type) throws -> [T] {

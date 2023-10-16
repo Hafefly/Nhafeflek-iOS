@@ -41,6 +41,10 @@
 		99B428A02AD979B200C54654 /* HFBarber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4289F2AD979B200C54654 /* HFBarber.swift */; };
 		99B428A22AD979D800C54654 /* WorkingHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B428A12AD979D800C54654 /* WorkingHours.swift */; };
 		99B428A42AD979F900C54654 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B428A32AD979F900C54654 /* String.swift */; };
+		99D453172ADDA1990022E2BC /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D453162ADDA1990022E2BC /* UserRepo.swift */; };
+		99D453192ADDA1A90022E2BC /* HFUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D453182ADDA1A90022E2BC /* HFUser.swift */; };
+		99D4531B2ADDC7B80022E2BC /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D4531A2ADDC7B80022E2BC /* SignUpView.swift */; };
+		99D4531E2ADDC81A0022E2BC /* SignUpInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D4531D2ADDC81A0022E2BC /* SignUpInfoView.swift */; };
 		99DA307B2AD9DF0600E68474 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA307A2AD9DF0600E68474 /* LoginViewModel.swift */; };
 		99DA307D2AD9DF8700E68474 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA307C2AD9DF8700E68474 /* Logger.swift */; };
 		99DA30802AD9DF9E00E68474 /* UiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DA307F2AD9DF9E00E68474 /* UiState.swift */; };
@@ -94,6 +98,10 @@
 		99B4289F2AD979B200C54654 /* HFBarber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFBarber.swift; sourceTree = "<group>"; };
 		99B428A12AD979D800C54654 /* WorkingHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkingHours.swift; sourceTree = "<group>"; };
 		99B428A32AD979F900C54654 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		99D453162ADDA1990022E2BC /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		99D453182ADDA1A90022E2BC /* HFUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFUser.swift; sourceTree = "<group>"; };
+		99D4531A2ADDC7B80022E2BC /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		99D4531D2ADDC81A0022E2BC /* SignUpInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfoView.swift; sourceTree = "<group>"; };
 		99DA307A2AD9DF0600E68474 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		99DA307C2AD9DF8700E68474 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		99DA307F2AD9DF9E00E68474 /* UiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiState.swift; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 			children = (
 				9900217C2ADD097B00A8C309 /* BarberRepo.swift */,
 				9900217E2ADD0AEE00A8C309 /* OrderRepo.swift */,
+				99D453162ADDA1990022E2BC /* UserRepo.swift */,
 			);
 			path = Repos;
 			sourceTree = "<group>";
@@ -190,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				99B4289F2AD979B200C54654 /* HFBarber.swift */,
+				99D453182ADDA1A90022E2BC /* HFUser.swift */,
 				99B428A12AD979D800C54654 /* WorkingHours.swift */,
 				990021732ADC62FC00A8C309 /* Haircut.swift */,
 				990021752ADC631200A8C309 /* CodeIdentifiable.swift */,
@@ -233,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				99ED94422AD944650022F1F7 /* Splash */,
-				99015AE02AD834A8005ADD6B /* Login */,
+				99D453212ADDC8440022E2BC /* Auth */,
 				995D1DD82AD9A38600C75583 /* Onboarding */,
 				99ED942F2AD92A680022F1F7 /* Main */,
 				99ED94292AD9230A0022F1F7 /* Apoointments */,
@@ -353,6 +363,40 @@
 				99B4289B2AD9796800C54654 /* FirebaseAuth.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		99D4531C2ADDC7BF0022E2BC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				99D4531A2ADDC7B80022E2BC /* SignUpView.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		99D4531F2ADDC8210022E2BC /* SignUpInfo */ = {
+			isa = PBXGroup;
+			children = (
+				99D4531D2ADDC81A0022E2BC /* SignUpInfoView.swift */,
+			);
+			path = SignUpInfo;
+			sourceTree = "<group>";
+		};
+		99D453202ADDC8330022E2BC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				99D4531C2ADDC7BF0022E2BC /* SignUp */,
+				99D4531F2ADDC8210022E2BC /* SignUpInfo */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		99D453212ADDC8440022E2BC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				99015AE02AD834A8005ADD6B /* Login */,
+				99D453202ADDC8330022E2BC /* SignUp */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		99DA307E2AD9DF8C00E68474 /* Managers */ = {
@@ -500,11 +544,14 @@
 				99ED94282AD923030022F1F7 /* AppointmentsView.swift in Sources */,
 				99015AD32AD82D7C005ADD6B /* View.swift in Sources */,
 				99ED942B2AD928580022F1F7 /* Tabs.swift in Sources */,
+				99D4531B2ADDC7B80022E2BC /* SignUpView.swift in Sources */,
+				99D4531E2ADDC81A0022E2BC /* SignUpInfoView.swift in Sources */,
 				9900217F2ADD0AEF00A8C309 /* OrderRepo.swift in Sources */,
 				990021742ADC62FC00A8C309 /* Haircut.swift in Sources */,
 				99B428A22AD979D800C54654 /* WorkingHours.swift in Sources */,
 				990021762ADC631200A8C309 /* CodeIdentifiable.swift in Sources */,
 				99DA30802AD9DF9E00E68474 /* UiState.swift in Sources */,
+				99D453192ADDA1A90022E2BC /* HFUser.swift in Sources */,
 				99B4289C2AD9796800C54654 /* FirebaseAuth.swift in Sources */,
 				99015ADA2AD83075005ADD6B /* Font.swift in Sources */,
 				99015ACB2AD82A0A005ADD6B /* HFButton.swift in Sources */,
@@ -528,6 +575,7 @@
 				99015ADC2AD830C1005ADD6B /* Text.swift in Sources */,
 				99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */,
 				9900217D2ADD097C00A8C309 /* BarberRepo.swift in Sources */,
+				99D453172ADDA1990022E2BC /* UserRepo.swift in Sources */,
 				99ED943E2AD92D4E0022F1F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

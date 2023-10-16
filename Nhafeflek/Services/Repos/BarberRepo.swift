@@ -55,10 +55,6 @@ class BarberRepo {
         return try await OrderRepo.shared.getOrders(withIds: docIds)
     }
     
-    func createOrderReference(ref: OrderReference, referenceId: String) throws {
-        try ordersCollection(ref.barberId).document(referenceId).setData(from: ref)
-    }
-    
     func decodeDocuments<T: Decodable>(_ snapshots: QuerySnapshot, as type: T.Type) throws -> [T] {
         var decodedData = [T]()
                 

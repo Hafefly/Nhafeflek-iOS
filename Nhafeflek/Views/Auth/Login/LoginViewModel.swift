@@ -38,7 +38,7 @@ extension LoginView {
         }
         
         func signup() {
-//            NavigationCoordinator.pushScreen(SignUpInfoView())
+            NavigationCoordinator.pushScreen(SignUpInfoView())
         }
     }
 }
