@@ -19,7 +19,7 @@ class OrderRepo {
         
         let ref = OrderReference(userId: order.userId, barberId: order.barberId, createdAt: Timestamp())
         
-        try UserRepo.shared.createOrderReference(ref: ref, referenceId: referenceId)
+        try BarberRepo.shared.createOrderReference(ref: ref, referenceId: referenceId)
         try BarberRepo.shared.createOrderReference(ref: ref, referenceId: referenceId)
     }
     

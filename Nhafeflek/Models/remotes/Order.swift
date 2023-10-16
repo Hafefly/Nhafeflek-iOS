@@ -13,12 +13,12 @@ struct OrderReference: CodeIdentifiable {
     @DocumentID var id: String?
     var userId: String
     var barberId: String
-    var createdAt: String
-    var deletedAt: String
+    var createdAt: Timestamp
+    var deletedAt: Timestamp?
 }
 
 struct Order: CodeIdentifiable {
-    var id: String?
+    @DocumentID var id: String?
     var userId: String
     var barberId: String
     let fade: UInt?
