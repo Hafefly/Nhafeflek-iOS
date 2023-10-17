@@ -24,7 +24,7 @@ extension SplashView {
                         if barber.verified {
                             NavigationCoordinator.shared.switchStartPoint(MainView())
                         } else {
-                            if let barbershopUID = barber.barbershopUID {
+                            if nil != barber.barbershopUID {
                                 NavigationCoordinator.pushScreen(ActivationView(barber: barber))
                             } else {
                                 NavigationCoordinator.pushScreen(AdmissionView())
@@ -32,6 +32,7 @@ extension SplashView {
                         }
                     } catch {
                         #warning("implement error banner")
+                        debugPrint(error.localizedDescription)
                     }
                 }
             } else {

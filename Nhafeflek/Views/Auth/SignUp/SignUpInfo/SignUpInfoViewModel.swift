@@ -11,24 +11,23 @@ import HFNavigation
 
 extension SignUpInfoView {
     class Model: ObservableObject {
-        @Published var otpButtonText = "send otp"
-        @Published var otpButtonDisabled = false
         
         @Published public private(set) var firstnameUiState: UiState<String> = .idle
         @Published public private(set) var lastnameUiState: UiState<String> = .idle
         @Published public private(set) var phoneNumberUiState: UiState<String> = .idle
         
-        let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+        @Published public private(set) var otpFieldOpacity = 0
         @Published public private(set) var timeCounting = 60000
+        @Published public private(set) var otpButtonText = "send otp"
         
+        @Published public private(set) var otpButtonDisabled = true
+        @Published public private(set) var continueButtonDisabled = true
+        
+        let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
         @Published public var otpFields: [String] = Array(repeating: "", count: 6)
         
         func sendOtp(phonenumber: String) {
             self.otpButtonDisabled = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 60){
-                self.otpButtonDisabled = false
-                self.otpButtonText = "resend_otp"
-            }
             #warning("send otp here")
         }
         
@@ -130,7 +129,19 @@ extension SignUpInfoView {
             if timeCounting > 0 {
                 timeCounting -= 1000
             } else if timeCounting == 0 {
-                //
+                self.timeCounting = 60000
+            }
+        }
+        
+        private func showOtpFields() {
+            self.otpFieldOpacity = 1
+        }
+        
+        func otpButtonDisabledd() -> Bool {
+            switch phoneNumberUiState {
+            case .success:
+                return timeCounting == 60000
+            default: return false
             }
         }
     }

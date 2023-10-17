@@ -87,12 +87,13 @@ struct SignUpInfoView: View {
                             .font(.white, .regular, 16)
                     }
                     .frame(width: 100, height: 56)
-                    .background(Color.hfOrange)
+                    .background(model.otpButtonDisabledd() ? Color.primaryColor : Color.hfOrange)
                     .cornerRadius(12)
                     .overlay(
                         RoundedRectangle(cornerRadius: 12)
                             .stroke(Color.white, lineWidth: 3)
                     )
+                    .disabled(model.otpButtonDisabledd())
                 }
             }
             
@@ -129,15 +130,16 @@ struct SignUpInfoView: View {
                     .blur(radius: 10)
                 LinearGradient.hfGradient
             }
-                .ImagePattern()
+            .ImagePattern()
         )
+        .onTapGesture(perform: UIApplication.endEditing)
     }
     
     @ViewBuilder
     func OTPField() -> some View {
         VStack{
             HStack{
-                ForEach(0...6, id: \.hashValue) { index in
+                ForEach(0 ..< 6, id: \.hashValue) { index in
                     ZStack{
                         TextField("", text: $model.otpFields[index])
                             .keyboardType(.numberPad)

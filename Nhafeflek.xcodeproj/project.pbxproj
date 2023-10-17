@@ -43,6 +43,7 @@
 		99A926D12ADF14D900149A0A /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D02ADF14D900149A0A /* OTPField.swift */; };
 		99A926D32ADF1D2900149A0A /* TextFieldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D22ADF1D2900149A0A /* TextFieldButton.swift */; };
 		99A926D52ADF1D5E00149A0A /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D42ADF1D5E00149A0A /* Weak.swift */; };
+		99A926D72ADF26CE00149A0A /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D62ADF26CE00149A0A /* UIApplication.swift */; };
 		99B4289A2AD978F100C54654 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B428992AD978F100C54654 /* SplashViewModel.swift */; };
 		99B4289C2AD9796800C54654 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4289B2AD9796800C54654 /* FirebaseAuth.swift */; };
 		99B428A02AD979B200C54654 /* HFBarber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4289F2AD979B200C54654 /* HFBarber.swift */; };
@@ -107,6 +108,7 @@
 		99A926D02ADF14D900149A0A /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
 		99A926D22ADF1D2900149A0A /* TextFieldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldButton.swift; sourceTree = "<group>"; };
 		99A926D42ADF1D5E00149A0A /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
+		99A926D62ADF26CE00149A0A /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		99B428992AD978F100C54654 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		99B4289B2AD9796800C54654 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		99B4289F2AD979B200C54654 /* HFBarber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFBarber.swift; sourceTree = "<group>"; };
@@ -184,11 +186,11 @@
 			children = (
 				99015AC02AD825E9005ADD6B /* HFLogo.swift */,
 				99015AD72AD83004005ADD6B /* Separator.swift */,
+				99A926D22ADF1D2900149A0A /* TextFieldButton.swift */,
 				99015AE12AD84036005ADD6B /* HaircutCard.swift */,
 				99015AEB2AD87B51005ADD6B /* ViewLayout.swift */,
 				99A926CA2ADEEFC600149A0A /* LoadingView.swift */,
 				99015AD62AD82E09005ADD6B /* ViewModifiers */,
-				99A926D22ADF1D2900149A0A /* TextFieldButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -287,6 +289,7 @@
 				99015AE32AD86939005ADD6B /* UInt.swift */,
 				99B428A32AD979F900C54654 /* String.swift */,
 				990021792ADC662900A8C309 /* Date.swift */,
+				99A926D62ADF26CE00149A0A /* UIApplication.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				9900217A2ADC662900A8C309 /* Date.swift in Sources */,
 				99015AD52AD82DF8005ADD6B /* HFTextField.swift in Sources */,
 				99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */,
+				99A926D72ADF26CE00149A0A /* UIApplication.swift in Sources */,
 				99015ADC2AD830C1005ADD6B /* Text.swift in Sources */,
 				99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */,
 				9900217D2ADD097C00A8C309 /* BarberRepo.swift in Sources */,

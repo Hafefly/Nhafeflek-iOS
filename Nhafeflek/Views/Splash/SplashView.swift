@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SplashView: View {
+    @StateObject private var model = Model()
     var body: some View {
         VStack{
             Spacer()
