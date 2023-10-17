@@ -15,7 +15,7 @@ struct HFButtonStyle: ButtonStyle {
             Spacer()
         }
         .padding(.vertical, 12)
-        .background(Color.accentColor)
+        .background(Color.hfOrange)
         .cornerRadius(12)
     }
 }

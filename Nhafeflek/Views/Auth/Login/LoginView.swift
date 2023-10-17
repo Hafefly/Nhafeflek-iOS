@@ -24,9 +24,13 @@ struct LoginView: View {
             Spacer()
             VStack(spacing: 16){
                 TextField("email", text: $email)
-                    .textFieldStyle(HFAuthTextFieldStyle())
+                    .placeholder(when: email.isEmpty) {
+                        Text("email")
+                            .foregroundColor(.white.opacity(0.7))
+                    }
+                    .textFieldStyle(HFTextFieldStyle(uiState: model.emailUiState))
                 SecureField("password", text: $password)
-                    .textFieldStyle(HFAuthTextFieldStyle())
+                    .textFieldStyle(HFTextFieldStyle(uiState: model.passwordUiState))
                 HStack{
                     Button {
                         model.resetPassword(email: email)
@@ -35,12 +39,16 @@ struct LoginView: View {
                             .font(.white, .medium, 12)
                     }
                     .frame(width: 100)
+                    .padding(8)
                     .background(Color.primaryColor)
+                    
                     .overlay(
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
                             .stroke(Color.white, lineWidth: 1)
                     )
+                    
                     Spacer()
+                    
                     Button {
                         model.signup()
                     } label: {
@@ -48,6 +56,7 @@ struct LoginView: View {
                             .font(.white, .medium, 12)
                     }
                     .frame(width: 100)
+                    .padding(8)
                     .background(Color.primaryColor)
                     .overlay(
                         RoundedRectangle(cornerRadius: 4, style: .continuous)
@@ -69,8 +78,11 @@ struct LoginView: View {
             
             Spacer()
             
-            Button("Sign In") {
+            Button {
                 model.login(email: email, password: password)
+            } label: {
+                Text("Sign in")
+                    .font(.white, .bold, 20)
             }
             .buttonStyle(HFButtonStyle())
         }

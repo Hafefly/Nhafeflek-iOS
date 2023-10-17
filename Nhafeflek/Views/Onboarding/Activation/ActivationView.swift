@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ActivationView: View {
+    private let barber: HFBarber
+    
+    init(barber: HFBarber) {
+        self.barber = barber
+    }
+    
     var body: some View {
         ViewLayout {
             HeaderView(title: "activate account")
@@ -20,8 +26,10 @@ struct ActivationView: View {
                 VStack(alignment: .leading){
                     Text("account informations")
                         .font(.primaryColor, .semiBold, 20)
-                    informationPanel(label: "fullname", value: "Samy Abde")
-                    informationPanel(label: "barbershop name", value: "Fasta La")
+                    informationPanel(label: "fullname", value: barber.firstname + " " + barber.lastname)
+                    if let barbershopName = barber.barbershopName {
+                        informationPanel(label: "barbershop name", value: barbershopName)
+                    }
                 }
                 .padding(16)
                 .background(Color.white)

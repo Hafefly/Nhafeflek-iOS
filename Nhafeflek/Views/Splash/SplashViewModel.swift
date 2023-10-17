@@ -17,8 +17,23 @@ extension SplashView {
         }
         
         func getMe(){
-            if nil != FirebaseAuth.shared.getUserId() {
-                NavigationCoordinator.shared.switchStartPoint(MainView())
+            if let barberId = FirebaseAuth.shared.getUserId() {
+                Task {
+                    do {
+                        let barber = try await BarberRepo.shared.getBarber(barberId)
+                        if barber.verified {
+                            NavigationCoordinator.shared.switchStartPoint(MainView())
+                        } else {
+                            if let barbershopUID = barber.barbershopUID {
+                                NavigationCoordinator.pushScreen(ActivationView(barber: barber))
+                            } else {
+                                NavigationCoordinator.pushScreen(AdmissionView())
+                            }
+                        }
+                    } catch {
+                        #warning("implement error banner")
+                    }
+                }
             } else {
                 NavigationCoordinator.shared.switchStartPoint(LoginView())
             }

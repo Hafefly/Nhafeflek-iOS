@@ -20,7 +20,7 @@
 		99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ACC2AD82B6A005ADD6B /* Color.swift */; };
 		99015AD12AD82CD4005ADD6B /* LinearGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD02AD82CD4005ADD6B /* LinearGradient.swift */; };
 		99015AD32AD82D7C005ADD6B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD22AD82D7C005ADD6B /* View.swift */; };
-		99015AD52AD82DF8005ADD6B /* HFAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD42AD82DF8005ADD6B /* HFAuthTextField.swift */; };
+		99015AD52AD82DF8005ADD6B /* HFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD42AD82DF8005ADD6B /* HFTextField.swift */; };
 		99015AD82AD83004005ADD6B /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD72AD83004005ADD6B /* Separator.swift */; };
 		99015ADA2AD83075005ADD6B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AD92AD83075005ADD6B /* Font.swift */; };
 		99015ADC2AD830C1005ADD6B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015ADB2AD830C1005ADD6B /* Text.swift */; };
@@ -36,6 +36,13 @@
 		99A03B392AD5D39B00814D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A03B382AD5D39B00814D02 /* Assets.xcassets */; };
 		99A03B3C2AD5D39B00814D02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A03B3B2AD5D39B00814D02 /* Preview Assets.xcassets */; };
 		99A03B442AD5D42900814D02 /* HFNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 99A03B432AD5D42900814D02 /* HFNavigation */; };
+		99A926C92ADEE0B500149A0A /* SignUpInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926C82ADEE0B500149A0A /* SignUpInfoViewModel.swift */; };
+		99A926CB2ADEEFC600149A0A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926CA2ADEEFC600149A0A /* LoadingView.swift */; };
+		99A926CD2ADEF12500149A0A /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926CC2ADEF12500149A0A /* Province.swift */; };
+		99A926CF2ADEFB2E00149A0A /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926CE2ADEFB2E00149A0A /* SignUpViewModel.swift */; };
+		99A926D12ADF14D900149A0A /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D02ADF14D900149A0A /* OTPField.swift */; };
+		99A926D32ADF1D2900149A0A /* TextFieldButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D22ADF1D2900149A0A /* TextFieldButton.swift */; };
+		99A926D52ADF1D5E00149A0A /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A926D42ADF1D5E00149A0A /* Weak.swift */; };
 		99B4289A2AD978F100C54654 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B428992AD978F100C54654 /* SplashViewModel.swift */; };
 		99B4289C2AD9796800C54654 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4289B2AD9796800C54654 /* FirebaseAuth.swift */; };
 		99B428A02AD979B200C54654 /* HFBarber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B4289F2AD979B200C54654 /* HFBarber.swift */; };
@@ -77,7 +84,7 @@
 		99015ACC2AD82B6A005ADD6B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		99015AD02AD82CD4005ADD6B /* LinearGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradient.swift; sourceTree = "<group>"; };
 		99015AD22AD82D7C005ADD6B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		99015AD42AD82DF8005ADD6B /* HFAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFAuthTextField.swift; sourceTree = "<group>"; };
+		99015AD42AD82DF8005ADD6B /* HFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFTextField.swift; sourceTree = "<group>"; };
 		99015AD72AD83004005ADD6B /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		99015AD92AD83075005ADD6B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		99015ADB2AD830C1005ADD6B /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -93,6 +100,13 @@
 		99A03B362AD5D39900814D02 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		99A03B382AD5D39B00814D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99A03B3B2AD5D39B00814D02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		99A926C82ADEE0B500149A0A /* SignUpInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfoViewModel.swift; sourceTree = "<group>"; };
+		99A926CA2ADEEFC600149A0A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		99A926CC2ADEF12500149A0A /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		99A926CE2ADEFB2E00149A0A /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		99A926D02ADF14D900149A0A /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
+		99A926D22ADF1D2900149A0A /* TextFieldButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldButton.swift; sourceTree = "<group>"; };
+		99A926D42ADF1D5E00149A0A /* Weak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weak.swift; sourceTree = "<group>"; };
 		99B428992AD978F100C54654 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		99B4289B2AD9796800C54654 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
 		99B4289F2AD979B200C54654 /* HFBarber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFBarber.swift; sourceTree = "<group>"; };
@@ -172,7 +186,9 @@
 				99015AD72AD83004005ADD6B /* Separator.swift */,
 				99015AE12AD84036005ADD6B /* HaircutCard.swift */,
 				99015AEB2AD87B51005ADD6B /* ViewLayout.swift */,
+				99A926CA2ADEEFC600149A0A /* LoadingView.swift */,
 				99015AD62AD82E09005ADD6B /* ViewModifiers */,
+				99A926D22ADF1D2900149A0A /* TextFieldButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -191,6 +207,8 @@
 			children = (
 				99015AC32AD8283E005ADD6B /* AuthProvider.swift */,
 				99ED942A2AD928580022F1F7 /* Tabs.swift */,
+				99A926CC2ADEF12500149A0A /* Province.swift */,
+				99A926D02ADF14D900149A0A /* OTPField.swift */,
 			);
 			path = locals;
 			sourceTree = "<group>";
@@ -226,6 +244,7 @@
 				99015AD92AD83075005ADD6B /* Font.swift */,
 				99015ADB2AD830C1005ADD6B /* Text.swift */,
 				99ED94302AD92AEE0022F1F7 /* UIImage.swift */,
+				99A926D42ADF1D5E00149A0A /* Weak.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -234,7 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				99015ACA2AD82A0A005ADD6B /* HFButton.swift */,
-				99015AD42AD82DF8005ADD6B /* HFAuthTextField.swift */,
+				99015AD42AD82DF8005ADD6B /* HFTextField.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -369,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				99D4531A2ADDC7B80022E2BC /* SignUpView.swift */,
+				99A926CE2ADEFB2E00149A0A /* SignUpViewModel.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -377,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				99D4531D2ADDC81A0022E2BC /* SignUpInfoView.swift */,
+				99A926C82ADEE0B500149A0A /* SignUpInfoViewModel.swift */,
 			);
 			path = SignUpInfo;
 			sourceTree = "<group>";
@@ -536,11 +557,15 @@
 			files = (
 				99B428A42AD979F900C54654 /* String.swift in Sources */,
 				99DA307D2AD9DF8700E68474 /* Logger.swift in Sources */,
+				99A926C92ADEE0B500149A0A /* SignUpInfoViewModel.swift in Sources */,
 				99B4289A2AD978F100C54654 /* SplashViewModel.swift in Sources */,
 				99015AEC2AD87B51005ADD6B /* ViewLayout.swift in Sources */,
 				995D1DD72AD9A32100C75583 /* AdmissionView.swift in Sources */,
 				99B428A02AD979B200C54654 /* HFBarber.swift in Sources */,
+				99A926D52ADF1D5E00149A0A /* Weak.swift in Sources */,
 				99ED94312AD92AEE0022F1F7 /* UIImage.swift in Sources */,
+				99A926CB2ADEEFC600149A0A /* LoadingView.swift in Sources */,
+				99A926D32ADF1D2900149A0A /* TextFieldButton.swift in Sources */,
 				99ED94282AD923030022F1F7 /* AppointmentsView.swift in Sources */,
 				99015AD32AD82D7C005ADD6B /* View.swift in Sources */,
 				99ED942B2AD928580022F1F7 /* Tabs.swift in Sources */,
@@ -548,6 +573,7 @@
 				99D4531E2ADDC81A0022E2BC /* SignUpInfoView.swift in Sources */,
 				9900217F2ADD0AEF00A8C309 /* OrderRepo.swift in Sources */,
 				990021742ADC62FC00A8C309 /* Haircut.swift in Sources */,
+				99A926D12ADF14D900149A0A /* OTPField.swift in Sources */,
 				99B428A22AD979D800C54654 /* WorkingHours.swift in Sources */,
 				990021762ADC631200A8C309 /* CodeIdentifiable.swift in Sources */,
 				99DA30802AD9DF9E00E68474 /* UiState.swift in Sources */,
@@ -558,6 +584,7 @@
 				995D1DDA2AD9A3CF00C75583 /* ActivationView.swift in Sources */,
 				99015AE42AD86939005ADD6B /* UInt.swift in Sources */,
 				99A03B372AD5D39900814D02 /* MainView.swift in Sources */,
+				99A926CF2ADEFB2E00149A0A /* SignUpViewModel.swift in Sources */,
 				99ED942D2AD928C50022F1F7 /* CalendarView.swift in Sources */,
 				99A03B352AD5D39900814D02 /* NhafeflekApp.swift in Sources */,
 				99015AC42AD8283E005ADD6B /* AuthProvider.swift in Sources */,
@@ -567,10 +594,11 @@
 				99015AC12AD825E9005ADD6B /* HFLogo.swift in Sources */,
 				99015AD12AD82CD4005ADD6B /* LinearGradient.swift in Sources */,
 				99ED94412AD944620022F1F7 /* SplashView.swift in Sources */,
+				99A926CD2ADEF12500149A0A /* Province.swift in Sources */,
 				99015AD82AD83004005ADD6B /* Separator.swift in Sources */,
 				990021782ADC633400A8C309 /* Order.swift in Sources */,
 				9900217A2ADC662900A8C309 /* Date.swift in Sources */,
-				99015AD52AD82DF8005ADD6B /* HFAuthTextField.swift in Sources */,
+				99015AD52AD82DF8005ADD6B /* HFTextField.swift in Sources */,
 				99015ADE2AD83493005ADD6B /* LoginView.swift in Sources */,
 				99015ADC2AD830C1005ADD6B /* Text.swift in Sources */,
 				99015ACD2AD82B6A005ADD6B /* Color.swift in Sources */,
@@ -635,7 +663,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -692,7 +720,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -714,13 +742,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nhafeflek/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/raynex/Desktop/Simulator Screenshot - iPhone 14 Pro - 2023-10-13 at 13.56.44.png";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,13 +775,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nhafeflek/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "/Users/raynex/Desktop/Simulator Screenshot - iPhone 14 Pro - 2023-10-13 at 13.56.44.png";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
