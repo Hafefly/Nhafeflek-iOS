@@ -29,6 +29,7 @@
 		99015AE42AD86939005ADD6B /* UInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE32AD86939005ADD6B /* UInt.swift */; };
 		99015AE92AD8781B005ADD6B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AE82AD8781B005ADD6B /* ProfileView.swift */; };
 		99015AEC2AD87B51005ADD6B /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99015AEB2AD87B51005ADD6B /* ViewLayout.swift */; };
+		99319D522AE04818004765D3 /* HFNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 99319D512AE04818004765D3 /* HFNavigation */; };
 		995D1DD72AD9A32100C75583 /* AdmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D1DD62AD9A32100C75583 /* AdmissionView.swift */; };
 		995D1DDA2AD9A3CF00C75583 /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D1DD92AD9A3CF00C75583 /* ActivationView.swift */; };
 		99A03B352AD5D39900814D02 /* NhafeflekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A03B342AD5D39900814D02 /* NhafeflekApp.swift */; };
@@ -139,6 +140,7 @@
 				99ED94382AD92CF00022F1F7 /* FirebaseFirestore in Frameworks */,
 				99ED94362AD92CF00022F1F7 /* FirebaseAuthCombine-Community in Frameworks */,
 				99ED943A2AD92CF00022F1F7 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				99319D522AE04818004765D3 /* HFNavigation in Frameworks */,
 				99ED94342AD92CF00022F1F7 /* FirebaseAuth in Frameworks */,
 				99ED943C2AD92CF00022F1F7 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -497,6 +499,7 @@
 				99ED94372AD92CF00022F1F7 /* FirebaseFirestore */,
 				99ED94392AD92CF00022F1F7 /* FirebaseFirestoreCombine-Community */,
 				99ED943B2AD92CF00022F1F7 /* FirebaseFirestoreSwift */,
+				99319D512AE04818004765D3 /* HFNavigation */,
 			);
 			productName = Nhafeflek;
 			productReference = 99A03B312AD5D39900814D02 /* Nhafeflek.app */;
@@ -527,8 +530,8 @@
 			);
 			mainGroup = 99A03B282AD5D39900814D02;
 			packageReferences = (
-				99A03B422AD5D42800814D02 /* XCLocalSwiftPackageReference "../HFNavigation" */,
 				99ED94322AD92CF00022F1F7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				99319D502AE04818004765D3 /* XCLocalSwiftPackageReference "../HFNavigation" */,
 			);
 			productRefGroup = 99A03B322AD5D39900814D02 /* Products */;
 			projectDirPath = "";
@@ -824,7 +827,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		99A03B422AD5D42800814D02 /* XCLocalSwiftPackageReference "../HFNavigation" */ = {
+		99319D502AE04818004765D3 /* XCLocalSwiftPackageReference "../HFNavigation" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../HFNavigation;
 		};
@@ -842,6 +845,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		99319D512AE04818004765D3 /* HFNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HFNavigation;
+		};
 		99A03B432AD5D42900814D02 /* HFNavigation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HFNavigation;
