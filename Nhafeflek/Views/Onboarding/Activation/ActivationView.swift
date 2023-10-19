@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import HFCoreModel
 
 struct ActivationView: View {
-    private let barber: HFBarber
+    private let barber: Barber
     
-    init(barber: HFBarber) {
+    init(barber: Barber) {
         self.barber = barber
     }
     

@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Text {
-    func font(_ color: Color,_ font: Font.SFProRounded, _ size: CGFloat) -> Text {
+    public func font(_ color: Color,_ font: Font.SFProRounded, _ size: CGFloat) -> Text {
         switch font {
         case .regular:
             return self
@@ -29,7 +29,7 @@ extension Text {
         }
     }
     
-    func title() -> Text {
+    public func title() -> Text {
         return self
             .font(.custom(Font.HFImpact.regular.rawValue, size: 32))
             .foregroundColor(.white)

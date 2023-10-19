@@ -8,14 +8,14 @@
 import SwiftUI
 
 extension Font {
-    enum SFProRounded: String {
+    public enum SFProRounded: String {
         case medium = "SF-Pro-Display-Medium"
         case regular = "SF-Pro-Display-Regular"
         case semiBold = "SF-Pro-Display-SemiBold"
         case bold = "SF-Pro-Display-Bold"
     }
     
-    enum HFImpact: String {
+    public enum HFImpact: String {
         case regular = "impact"
     }
 }
