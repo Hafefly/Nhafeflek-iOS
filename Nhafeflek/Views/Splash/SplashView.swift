@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HFCoreUI
 
 struct SplashView: View {
     @StateObject private var model = Model()

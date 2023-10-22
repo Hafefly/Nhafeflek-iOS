@@ -8,6 +8,8 @@
 import Foundation
 import HFNavigation
 import FirebaseAuth
+import HFAuth
+import HFCoreModel
 
 extension SplashView {
     class Model: ObservableObject {
@@ -36,9 +38,20 @@ extension SplashView {
                     }
                 }
             } else {
-                NavigationCoordinator.shared.switchStartPoint(LoginView())
+                NavigationCoordinator.shared.switchStartPoint(LoginView(success: self.loginSuccess))
             }
         }
         
+        func loginSuccess(user: User, isNew: Bool) -> Void {
+            if isNew {
+                do {
+                    try BarberRepo.shared.createBarber(user)
+                } catch {
+                    #warning("show error")
+                }
+            }
+            
+            self.getMe()
+        }
     }
 }

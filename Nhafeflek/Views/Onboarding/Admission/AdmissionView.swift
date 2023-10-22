@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HFCoreUI
 
 struct AdmissionView: View {
     var body: some View {

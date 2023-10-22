@@ -7,6 +7,7 @@
 
 import SwiftUI
 import HFCoreModel
+import HFCoreUI
 
 struct ActivationView: View {
     private let barber: Barber
@@ -27,7 +28,7 @@ struct ActivationView: View {
                 VStack(alignment: .leading){
                     Text("account informations")
                         .font(.primaryColor, .semiBold, 20)
-                    informationPanel(label: "fullname", value: barber.firstname + " " + barber.lastname)
+                    informationPanel(label: "fullname", value: barber.fullname)
                     if let barbershopName = barber.barbershopName {
                         informationPanel(label: "barbershop name", value: barbershopName)
                     }

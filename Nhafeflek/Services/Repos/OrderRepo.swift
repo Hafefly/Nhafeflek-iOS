@@ -8,6 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 import FirebaseFirestore
+import HFCoreModel
 
 class OrderRepo {
     static let shared = OrderRepo()

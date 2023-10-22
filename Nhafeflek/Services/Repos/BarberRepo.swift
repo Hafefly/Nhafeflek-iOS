@@ -7,9 +7,11 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
+import HFCoreModel
 
 enum HFCollection: String {
-    case users
+    case clients
     case barbers
     case barbershops
     case history
@@ -31,7 +33,14 @@ class BarberRepo {
         return barberDocument(id).collection(HFCollection.orders.rawValue)
     }
     
-    func createBarber(_ barber: HFBarber) throws {
+    func createBarber(_ user: User) throws {
+        
+        let barber = Barber(profileImage: user.photoURL?.absoluteString, fullname: user.displayName ?? "", email: user.email ?? "", experience: 0, haircutsDone: 0, isAvailableToHome: true, phoneNumber: user.phoneNumber, verified: false)
+        
+        return try barberDocument(user.uid).setData(from: barber)
+    }
+    
+    func updateBarber(_ barber: Barber) throws {
         guard let id = barber.id else {
             throw URLError(.badURL)
         }
@@ -39,12 +48,8 @@ class BarberRepo {
         return try barberDocument(id).setData(from: barber)
     }
     
-    func updateBarber(_ barber: HFBarber) throws {
-        try self.createBarber(barber)
-    }
-    
-    func getBarber(_ id: String) async throws -> HFBarber {
-        return try await self.barberDocument(id).getDocument(as: HFBarber.self)
+    func getBarber(_ id: String) async throws -> Barber {
+        return try await self.barberDocument(id).getDocument(as: Barber.self)
     }
     
     func getBarberOrderHaistory(_ id: String) async throws -> [Order] {

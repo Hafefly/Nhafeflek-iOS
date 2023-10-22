@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import HFCoreUI
+import HFCoreModel
 
 struct AppointmentsView: View {
     var body: some View {

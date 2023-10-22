@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import HFCoreUI
+import HFCoreModel
 
 struct ProfileView: View {
     
