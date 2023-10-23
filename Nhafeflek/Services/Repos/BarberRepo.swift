@@ -52,6 +52,24 @@ class BarberRepo {
         return try await self.barberDocument(id).getDocument(as: Barber.self)
     }
     
+    func addListenerForOrdersReferences(_ id: String, completion: @escaping ([String]) -> Void) {
+        self.ordersCollection(id).addSnapshotListener { snapshot, error in
+            if nil != error {
+                return
+            }
+            
+            guard let documents = snapshot?.documents else {
+                print("no element")
+                return
+            }
+            
+            let ids = documents.compactMap({ try? $0.data(as: 
+                    String.self) })
+            
+            completion(ids)
+        }
+    }
+    
     func getBarberOrderHaistory(_ id: String) async throws -> [Order] {
         guard let docIds = try self.decodeDocuments(try await self.ordersCollection(id).getDocuments(), as: OrderReference.self).map({ $0.id }) as? [String] else {
             throw URLError(.badURL)

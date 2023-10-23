@@ -35,6 +35,7 @@ extension SplashView {
                     } catch {
                         #warning("implement error banner")
                         debugPrint(error.localizedDescription)
+                        try? FirebaseAuth.shared.loggout()
                     }
                 }
             } else {

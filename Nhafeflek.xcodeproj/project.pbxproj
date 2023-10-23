@@ -19,6 +19,7 @@
 		99319D612AE05818004765D3 /* HFCoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = 99319D602AE05818004765D3 /* HFCoreUI */; };
 		995D1DD72AD9A32100C75583 /* AdmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D1DD62AD9A32100C75583 /* AdmissionView.swift */; };
 		995D1DDA2AD9A3CF00C75583 /* ActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D1DD92AD9A3CF00C75583 /* ActivationView.swift */; };
+		9992B4502AE575EC00B4B583 /* AppointmentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9992B44F2AE575EC00B4B583 /* AppointmentsViewModel.swift */; };
 		99A03B352AD5D39900814D02 /* NhafeflekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A03B342AD5D39900814D02 /* NhafeflekApp.swift */; };
 		99A03B372AD5D39900814D02 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A03B362AD5D39900814D02 /* MainView.swift */; };
 		99A03B392AD5D39B00814D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A03B382AD5D39B00814D02 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		99015AE82AD8781B005ADD6B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		995D1DD62AD9A32100C75583 /* AdmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdmissionView.swift; sourceTree = "<group>"; };
 		995D1DD92AD9A3CF00C75583 /* ActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivationView.swift; sourceTree = "<group>"; };
+		9992B44F2AE575EC00B4B583 /* AppointmentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewModel.swift; sourceTree = "<group>"; };
 		99A03B312AD5D39900814D02 /* Nhafeflek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nhafeflek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A03B342AD5D39900814D02 /* NhafeflekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhafeflekApp.swift; sourceTree = "<group>"; };
 		99A03B362AD5D39900814D02 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				99ED94272AD923030022F1F7 /* AppointmentsView.swift */,
+				9992B44F2AE575EC00B4B583 /* AppointmentsViewModel.swift */,
 			);
 			path = Apoointments;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				995D1DD72AD9A32100C75583 /* AdmissionView.swift in Sources */,
 				99ED94312AD92AEE0022F1F7 /* UIImage.swift in Sources */,
 				99ED94282AD923030022F1F7 /* AppointmentsView.swift in Sources */,
+				9992B4502AE575EC00B4B583 /* AppointmentsViewModel.swift in Sources */,
 				99ED942B2AD928580022F1F7 /* Tabs.swift in Sources */,
 				9900217F2ADD0AEF00A8C309 /* OrderRepo.swift in Sources */,
 				995D1DDA2AD9A3CF00C75583 /* ActivationView.swift in Sources */,

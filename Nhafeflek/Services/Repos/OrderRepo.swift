@@ -15,6 +15,28 @@ class OrderRepo {
     
     private let ordersCollection = Firestore.firestore().collection(HFCollection.orders.rawValue)
     
+    func addListenerForOrders(withIds ids: [String], completion: @escaping ([Order]) -> Void) {
+        guard !ids.isEmpty else {
+            completion([])
+            return
+        }
+        
+        ordersCollection.whereField(FieldPath.documentID(), in: ids)
+            .addSnapshotListener { snapshot, error in
+                if nil != error {
+                    return
+                }
+                
+                guard let documentsSnapshot = snapshot?.documents else {
+                    return
+                }
+                
+                let documents = documentsSnapshot.compactMap({ try? $0.data(as: Order.self) })
+                
+                completion(documents)
+            }
+    }
+    
     func getOrder(_ id: String) async throws -> Order {
         return try await ordersCollection.document(id).getDocument(as: Order.self)
     }
@@ -42,14 +64,9 @@ class OrderRepo {
     }
     
     func decodeDocuments<T: Decodable>(_ snapshots: QuerySnapshot, as type: T.Type) throws -> [T] {
-        var decodedData = [T]()
-                
-        for document in snapshots.documents {
-            if let data = try? document.data(as: type) {
-                decodedData.append(data)
-            }
+        
+        return try snapshots.documents.map { document in
+            try document.data(as: T.self)
         }
-                
-        return decodedData
     }
 }
