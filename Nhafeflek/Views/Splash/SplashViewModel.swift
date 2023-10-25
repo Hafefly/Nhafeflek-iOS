@@ -36,6 +36,7 @@ extension SplashView {
                         #warning("implement error banner")
                         debugPrint(error.localizedDescription)
                         try? FirebaseAuth.shared.loggout()
+                        await NavigationCoordinator.shared.switchStartPoint(LoginView(success: self.loginSuccess))
                     }
                 }
             } else {
